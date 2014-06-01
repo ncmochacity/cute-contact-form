@@ -1,0 +1,141 @@
+body,html,.wrapper{
+	min-height: 100%;
+}
+body,div,h1,h2,form,input,textarea,footer{
+	margin:0;
+	padding:0;
+
+}
+body{
+	font-family: "Montserrat",sans-serif;
+	font-weight: 100;
+	width:100%;
+	background-color:#97d3c6;
+
+}
+h1{
+	text-align: center;
+	margin:20px;
+	position:relative;
+	left:200px;
+	font-size: 50px;
+	color:#EEE;
+}
+.wrapper{
+	width:100%;
+	max-width: 940px;
+}
+.container:hover{
+	height:576px;
+
+}
+.container{
+	position:relative;
+	left:370px;
+	overflow:hidden;
+	height:446px;
+	top:0;
+	max-width: 760px;
+	text-align: center;
+}
+.container:after{
+	content:"";
+	position:absolute;
+	bottom:-100px;
+	background-image: url("../images/after.png");
+	left:0px;
+	width:530px;
+	height:260px;
+}
+.container:before{
+	content:"";
+	position:absolute;
+	bottom:28px;
+	left:0px;
+	background-image: url("../images/before.png");
+	width:530px;
+	height:316px;
+}
+.container:hover form{
+	height:930px;
+}
+form {
+	background-image :url("../images/letter.png");
+	position:relative;
+	overflow: hidden;
+	left:40px;
+	top:60px;
+	height:300px;
+	width:400px;
+	padding:20px;
+	border-radius: 5px;
+	border:3px solid white;
+	box-shadow:0 0 3px #9d9d9d,inset 0 0 27px white;
+	-webkit-box-shadow:0 0 3px #9d9d9d,inset 0 0 27px white;
+	-moz-box-shadow:0 0 3px #9d9d9d,inset 0 0 27px white;
+}
+label{
+	margin:10px 10px;
+	font-weight: 700;
+	text-shadow: 0px 1px 0px #fff;
+}
+input[type="text"], textarea{
+	background-color:#cdc7bf;
+	width:380px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height:40px;
+	font-weight: 100;
+	color:white;
+}
+textarea{
+	height:80px;
+
+}
+textarea:focus, input[type="text"]:focus{
+	background-color:#9d8879;
+}
+.container input[type="submit"]{
+	width:200px;
+	padding:10px;
+	text-align: center;
+	opacity:0;
+	cursor:pointer;
+	font-size: 20px;
+	color:#7c7873;
+	background: none;
+
+	
+}
+
+.container:hover input[type=submit] {
+	z-index:1;
+	opacity:1;
+	
+}
+         
+.container:hover input:hover[type=submit] {
+	color:#435c70;
+
+}
+.container input[type=submit] {
+    -webkit-transition: opacity 0.6s ease-in-out 0s;
+    -moz-transition: opacity .6s ease-in-out 0s;
+    -o-transition: opacity .6s ease-in-out 0s;
+    transition: opacity .6s ease-in-out 0s; 
+    }
+     
+.container:hover input[type=submit] {
+    -webkit-transition: opacity .5s ease-in-out 1.3s;
+    -moz-transition: opacity .5s ease-in-out 1.3s;
+    -o-transition: opacity .5s ease-in-out 1.3s;
+            transition: opacity .5s ease-in-out 1.3s;
+    }
+    
+
+
+
+
+
+
+
